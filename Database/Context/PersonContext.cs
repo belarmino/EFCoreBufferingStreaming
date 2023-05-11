@@ -12,7 +12,7 @@ namespace EFCoreBufferingStreaming.Database.Context
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             //Connect with database
-            options.UseSqlServer($"Data Source=localhost;Initial Catalog=efcore;Integrated Security=True;Persist Security Info=False;Encrypt=False;TrustServerCertificate=False");
+            options.UseSqlServer($"Data Source=localhost;Initial Catalog=efcore;Integrated Security=True;Persist Security Info=False;Encrypt=False;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
