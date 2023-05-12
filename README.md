@@ -1,5 +1,5 @@
 ﻿# Entity Framework Core performance improvements
-## streaming vs buffering
+## Streaming vs buffering
 
 Better way to read data from database use Entity Framework Core
 
