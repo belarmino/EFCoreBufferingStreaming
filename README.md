@@ -1,6 +1,6 @@
 ﻿# Entity Framework Core streaming vs buffering
 
-Better way to read data from database user Entity Framework Core
+Better way to read data from database use Entity Framework Core
 
 ## Run a project
 ```
