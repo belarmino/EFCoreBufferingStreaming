@@ -27,7 +27,7 @@ dotnet new gitignore
 ```
 dotnet tool install --global dotnet-ef
 ```
-### Add EF library
+### Libraries
 ```
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 dotnet add package Microsoft.EntityFrameworkCore.Design
@@ -35,6 +35,8 @@ dotnet add package Microsoft.EntityFrameworkCore.Design
 
 ### Create and apply migration
 ```
+dotnet add package BenchmarkDotNet
+dotnet add package Bogus
 dotnet ef migrations add Person
 dotnet ef database update
 ```
