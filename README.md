@@ -29,14 +29,14 @@ dotnet tool install --global dotnet-ef
 ```
 ### Libraries
 ```
+dotnet add package BenchmarkDotNet
+dotnet add package Bogus
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 dotnet add package Microsoft.EntityFrameworkCore.Design
 ```
 
 ### Create and apply migration
 ```
-dotnet add package BenchmarkDotNet
-dotnet add package Bogus
 dotnet ef migrations add Person
 dotnet ef database update
 ```
