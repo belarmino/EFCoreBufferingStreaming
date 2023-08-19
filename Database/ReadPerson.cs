@@ -18,13 +18,14 @@ namespace EFCoreBufferingStreaming.Database
         public void ReadPersonBuffering()
         {
             List<Person> people = db.Person.AsNoTracking().ToList();
-            int count = people.Count();
+            //int count = people.Count();
         }
         [Benchmark]
         public void ReadPersonStreaming()
         {
-            IQueryable<Person> people = db.Person.AsNoTracking();
-            int count = people.Count();
+            IEnumerable<Person> people = db.Person.AsNoTracking();
+            //IEnumerable<Person> _people = people;
+            //int count = people.Count();
         }
     }
 }
